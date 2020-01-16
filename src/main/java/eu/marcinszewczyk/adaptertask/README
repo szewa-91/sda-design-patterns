@@ -1,0 +1,12 @@
+Zadanie:
+
+Klasa CitiesProvider udostępnia listę nazw największych polskich miast w postaci  obiektów klasy City.
+
+	 * Popraw ją, by zwracała faktyczne dane, a nie pustą listę
+	  Dane o miastach możesz wziąć z Wikipedii lub jeśli chcesz, możesz je zmyślić.
+
+	* Klient A potrzebuje tych danych. To, co jest mu potrzebne to jedynie lista nazw miast w dowolnej kolejności
+	* Klient B również jest zainteresowany tymi danymi, ale w innym formacie. Oczekuje mapy, której kluczem będzie nazwa miasta,
+	  a wartością - jego populacja
+	* Klient C również oczekuje, że dostarczysz mu tych danych postaci listy, jednak tym razem posortowanej według populacji (malejąco)
+	* Stwórz trzy adaptery (np. AdapterA, AdapterB, AdapterC), które nie wprowadzając zmian w klasie CitiesProvider, dostarczą każdemu klientowi danych w takim formacie, jakiego potrzebuje
