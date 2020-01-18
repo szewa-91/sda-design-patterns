@@ -1,0 +1,16 @@
+1. krok
+
+Fabryka statyczna:
+    - dwie metody dla kierownicy po lewej i po prawej stronie
+        - createContinental(CarType)
+        - createBritish(CarType)
+
+        CarType {
+            HATCHBACK, SEDAN, VAN
+        }
+
+        CarFactory.createContinentalCar(CarType.SEDAN)
+
+        SEDAN : 2007, 1.9, diesel
+        HACHBACK : 2017, 1.7, benzyna
+        VAN : 1990, 1.4, gaz

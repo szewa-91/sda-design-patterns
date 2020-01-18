@@ -1,9 +1,5 @@
 package eu.marcinszewczyk.factorytask;
 
-/**
- * @author pl008sengrze, 27.01.2019
- * CRIF IT Solutions Poland
- */
 public abstract class Car {
 
 private String productionYear;
