@@ -6,10 +6,11 @@ public class MainAppAdapter {
 
         UKSocket ukSocket = new UKSocket();
         UKDevice britishMeatGrinder = new BritishMeatGrinder();
-        ukSocket.plugIn(britishMeatGrinder);
 
         ContinentalSocket continentalSocket = new ContinentalSocket();
         ContinentalDevice laptop = new PolishLaptop();
-        continentalSocket.plugIn(laptop);
+//        continentalSocket.plugIn(laptop);
+
+        continentalSocket.plugIn(new ContinentalBritishAdapter(britishMeatGrinder));
     }
 }
