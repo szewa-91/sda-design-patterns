@@ -1,12 +1,21 @@
 package eu.marcinszewczyk.singleton;
 
-public class Connection {
+public final class Connection {
+
+    private static Connection instance = null;
 
     private String address;
     private String login;
 
-    public Connection() {
+    private Connection() {
     }
+
+    public static Connection getInstance() {
+        if (instance == null) {
+            instance = new Connection();
+        }
+        return instance;
+    };
 
     public String getAddress() {
         return address;
