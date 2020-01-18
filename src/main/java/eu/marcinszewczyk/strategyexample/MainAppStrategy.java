@@ -4,13 +4,14 @@ public class MainAppStrategy {
 
     public static void main(String[] args) {
 
-        HardChef hardChef = new HardChef("Gordon Gessler");
-        SoftChef softChef = new SoftChef("Podest Amaro");
+        BoilingMediumEggStrategy boilingMediumEggStrategy =
+                new BoilingMediumEggStrategy();
+        BoilingSoftEggStrategy boilingSoftEggStrategy =
+                new BoilingSoftEggStrategy();
+        Chef hardChef = new Chef("Gordon Gessler", boilingMediumEggStrategy);
+        Chef softChef = new Chef("Podest Amaro", boilingSoftEggStrategy);
 
         hardChef.cook();
         softChef.cook();
-
     }
-
-
 }
