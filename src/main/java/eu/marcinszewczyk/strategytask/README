@@ -1,0 +1,14 @@
+Stwórz klasę Soldier
+    .attack()
+    .defend()
+Użyj wzorca Strategy
+
+
+DefenceStrategy
+    ObronaCzestochowy
+    EffectiveDefense
+
+OffenceStrategy
+    ....
+
+
